@@ -1,0 +1,8 @@
+[2026-11-08T04:34:15.840Z] [INFO] [install 1.8.9] stage: metadata
+[2026-11-08T04:34:16.341Z] [INFO] [install 1.8.9] stage: client
+[2026-11-08T04:34:21.471Z] [INFO] [install 1.8.9] stage: libraries
+[2026-11-08T04:34:29.447Z] [INFO] [install 1.8.9] stage: assets
+[2026-11-08T04:35:31.469Z] [INFO] [install 1.8.9] stage: natives
+[2026-11-08T04:35:31.583Z] [INFO] [install 1.8.9] stage: java
+[2026-11-08T04:35:31.697Z] [INFO] Java 8 not found, installing from Adoptium
+[2026-11-08T04:35:31.701Z] [ERROR] [install 1.8.9] Automatic Java download does not work on Android (the downloaded Java is for desktop Linux). In Termux install it with: pkg install openjdk-17

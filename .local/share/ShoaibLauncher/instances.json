@@ -1,0 +1,16 @@
+{
+  "selected": "vanilla-1-8-9-8a1d3a",
+  "instances": [
+    {
+      "id": "vanilla-1-8-9-8a1d3a",
+      "name": "Vanilla 1.8.9",
+      "mcVersion": "1.8.9",
+      "loader": "vanilla",
+      "loaderVersion": "",
+      "versionId": "1.8.9",
+      "ramMax": null,
+      "javaPath": "",
+      "createdAt": "2026-11-08T04:34:10.466Z"
+    }
+  ]
+}

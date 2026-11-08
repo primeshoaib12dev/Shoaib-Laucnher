@@ -1,0 +1,61 @@
+{
+  "name": "shoaib-launcher",
+  "productName": "Shoaib Launcher",
+  "version": "1.0.0-beta1",
+  "description": "Shoaib Launcher V1 - Minecraft Java launcher (Mod By Shoaib)",
+  "author": {
+    "name": "Mod By Shoaib",
+    "email": "noreply@shoaib-launcher.local"
+  },
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "web": "node src/web.js",
+    "start:proot": "electron . --no-sandbox --disable-gpu",
+    "test": "node --test test/core.test.js test/service.test.js test/content.test.js test/ui.test.js test/integrity.test.js test/server.test.js",
+    "cli": "node src/cli.js",
+    "dist:win": "electron-builder --win nsis portable",
+    "dist:linux": "electron-builder --linux AppImage deb"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {},
+  "license": "UNLICENSED",
+  "homepage": "https://example.invalid/shoaib-launcher",
+  "devDependencies": {
+    "electron": "^31.7.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.modbyshoaib.shoaiblauncher",
+    "productName": "Shoaib Launcher",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "win": {
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "Shoaib Launcher"
+    },
+    "linux": {
+      "icon": "build/icon.png",
+      "category": "Game",
+      "synopsis": "Minecraft Java launcher",
+      "maintainer": "Mod By Shoaib <noreply@shoaib-launcher.local>",
+      "desktop": {
+        "Name": "Shoaib Launcher",
+        "Comment": "Minecraft Java launcher - Mod By Shoaib",
+        "Categories": "Game;"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+'use strict';
+// The ONLY list of backend methods/events the UI may use. Shared by Electron (main.js) and the web server (server.js).
+const METHODS = new Set(['getSettings', 'setSettings', 'resetSettings', 'listVersions', 'loaderVersions', 'detectJava', 'listAccounts', 'addOfflineAccount', 'renameAccount', 'removeAccount', 'selectAccount',
+  'listInstances', 'createInstance', 'contentDiagnose', 'contentSearch', 'contentVersions', 'contentInstall', 'contentInstalled', 'contentToggle', 'contentRemove', 'contentImportLocal', 'contentCheckUpdates', 'contentUpdateItem', 'contentInstallModpack', 'contentImportModpack', 'contentExportMrpack', 'worldsList', 'worldsBackup', 'worldsDelete', 'worldsImportZip', 'controlsGet', 'controlsSet', 'controlsReset', 'touchList', 'touchSave', 'touchDelete', 'touchSetActive', 'plusRecommend', 'plusApplyRecommended', 'plusBackupWorlds', 'plusBackupProfile', 'plusRestoreProfile', 'plusExportBackup', 'plusImportBackup', 'plusQueueInstalls', 'plusQueueCancel', 'plusState', 'getStorage', 'setStorage', 'resetStorage',
+  'createInstance', 'selectInstance', 'renameInstance', 'updateInstance', 'duplicateInstance', 'deleteInstance', 'installInstance', 'pauseInstall', 'resumeInstall', 'cancelInstall', 'play', 'stop', 'instanceFolder', 'exportPath', 'getPlatform']);
+const EVENTS = ['install-progress', 'install-stage', 'install-state', 'install-done', 'game-log', 'game-state', 'game-exit', 'content-progress', 'plus-queue', 'plus-backup'];
+module.exports = { METHODS, EVENTS };
